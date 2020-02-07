@@ -10,6 +10,19 @@
 </head>
 <body>
     <h1>Documento html</h1>
+    <div id="miApp">
+        <p>{{mensaje}}</p>
+    </div>
+
+    <script>
+        new Vue({
+            el:'#miApp',
+            data:{
+                mensaje:'Hola Mundo'
+            }
+        })
+    
+    </script>
     
 </body>
 </html>
