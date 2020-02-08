@@ -1,33 +1,27 @@
 <template>
-  <div id="app">
-    <div class="container">
-      <div class="row">
-          <mi-menu></mi-menu>
-      </div>
-      <div class="row">
-        <contenido></contenido>
-      </div>
-      <hr>
-      <div class="row">
+
+    <section>
+        <h1>Lorem ipsum dolor sit amet</h1>
         <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rhoncus tristique nibh id tincidunt. Aenean nisi massa, scelerisque vel lacus a, fermentum lacinia tellus. Sed lobortis dui libero, ut pulvinar ipsum vestibulum quis. Maecenas sit amet massa ut leo varius vehicula at quis purus. Fusce eu diam sit amet sapien consectetur luctus. Vestibulum tortor ligula, suscipit et tempus et, suscipit vitae arcu. Integer sed dapibus mi. Aliquam iaculis mauris sed velit placerat tincidunt. Sed aliquet dapibus rutrum. Sed lectus nibh, suscipit sit amet viverra sagittis, euismod ac velit.</p>
-      </div>
-    </div>
-  </div>
+    </section>
+
 </template>
 
 <script>
-import MiMenu from './components/MiMenu.vue'
-import Contenido from './components/Contenido.vue'
-
 export default {
-  name: 'App',
-  components: {
-    MiMenu,
-    Contenido
-  }
+    name:'contenido',
+    data() {
+        return {
+            
+        }
+    },
 }
 </script>
 
-<style>
+<style scoped>
+    .texto{
+        color:red;
+        background-color: bisque;
+    }
 
 </style>
