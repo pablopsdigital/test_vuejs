@@ -1,9 +1,7 @@
 <template>
     <ul class="nav">
-        <item-menu v-bind:navegacionData = "{texto:'Inicio', url:'/inicio'}"/>
-        <item-menu v-bind:navegacionData = "{texto:'Acerca', url:'/acerca'}"/>
-        <item-menu v-bind:navegacionData = "{texto:'Tienda', url:'/tienda'}"/>
-        <item-menu v-bind:navegacionData = "{texto:'Contacto', url:'http://pablopsdigital.com'}"/>
+        <!--Cargar items en base a un array de datos-->
+        <item-menu v-bind:navegacionData="item" :key='item' v-for="item in itemsDeNavegacion"/>
     </ul>
 </template>
 
@@ -19,7 +17,13 @@
         },
         data() {
             return {
-
+                //Array with objects for menu
+                itemsDeNavegacion: [
+                    {texto:'Inicio', url:'/inicio'},
+                    {texto:'Acerca', url:'/acerca'},
+                    {texto:'Tienda', url:'/tienda'},
+                    {texto:'Contacto', url:'http://pablopsdigital.com'}
+                ]
             }
         },
     }
