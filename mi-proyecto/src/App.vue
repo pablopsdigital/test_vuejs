@@ -3,18 +3,21 @@
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Mi nueva aplicación en Vue.js App"/>
     <MiComponente></MiComponente>
+    <MiBoton textoBoton='Login' color='orange'></MiBoton>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import MiComponente from './components/MiComponente.vue'
+import MiBoton from './components/MiBoton.vue'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    MiComponente
+    MiComponente,
+    MiBoton
   }
 }
 </script>

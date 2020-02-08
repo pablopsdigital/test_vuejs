@@ -33,9 +33,6 @@ export default {
                 estructura: [
                     {numpag:'15', contenido:"Curabitur mollis vitae ligula ut porttitor. Vestibulum lacus urna"},
                     {numpag:'25', contenido:"Curabitur mollis vitae ligula ut porttitor. Vestibulum lacus urna"},
-                    {numpag:'35', contenido:"Curabitur mollis vitae ligula ut porttitor. Vestibulum lacus urna"},
-                    {numpag:'45', contenido:"Curabitur mollis vitae ligula ut porttitor. Vestibulum lacus urna"},
-                    {numpag:'55', contenido:"Curabitur mollis vitae ligula ut porttitor. Vestibulum lacus urna"}
                 ]
             }
         };
