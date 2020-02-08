@@ -1,28 +1,25 @@
 <template>
     <ul class="nav">
-        <li class="nav-item">
-            <a class="nav-link" v-bind:class="{active: claseActivo}" href="#">Active</a>
-        </li>
-         <li class="nav-item" v-bind:style="{backgroundColor:colorRandom, border: 'solid 3px red'}">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disebled</a>
-        </li>
+        <item-menu v-bind:navegacionData = "{texto:'Inicio', url:'/inicio'}"/>
+        <item-menu v-bind:navegacionData = "{texto:'Acerca', url:'/acerca'}"/>
+        <item-menu v-bind:navegacionData = "{texto:'Tienda', url:'/tienda'}"/>
+        <item-menu v-bind:navegacionData = "{texto:'Contacto', url:'http://pablopsdigital.com'}"/>
     </ul>
 </template>
 
-
 <script>
+    //import componets
+    import ItemMenu from './ItemMenu.vue'
+
     export default {
         name:'MiMenu',
+        components: {
+            ItemMenu //Registro componentes
+
+        },
         data() {
             return {
-                claseActivo:true,
-                colorRandom: '#' + Math.floor(Math.random()*6777215).toString (16)
+
             }
         },
     }
@@ -30,8 +27,4 @@
 
 
 <style>
-    .active{
-        font-weight: bold
-    }
-
 </style>
