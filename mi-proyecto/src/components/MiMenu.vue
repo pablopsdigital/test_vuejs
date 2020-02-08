@@ -3,7 +3,7 @@
         <li class="nav-item">
             <a class="nav-link" v-bind:class="{active: claseActivo}" href="#">Active</a>
         </li>
-         <li class="nav-item">
+         <li class="nav-item" v-bind:style="{backgroundColor:colorRandom, border: 'solid 3px red'}">
             <a class="nav-link" href="#">Link</a>
         </li>
         <li class="nav-item">
@@ -21,7 +21,8 @@
         name:'MiMenu',
         data() {
             return {
-                claseActivo:true    
+                claseActivo:true,
+                colorRandom: '#' + Math.floor(Math.random()*6777215).toString (16)
             }
         },
     }
